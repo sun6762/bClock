@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="BOAlarmInfoCell" customModule="bClock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAW-zD-6mv">
+                        <rect key="frame" x="14.999999999999996" y="29" width="61.666666666666657" height="31.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uD-A7-hD7">
+                        <rect key="frame" x="15" y="60.333333333333343" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZJ-KK-e3z">
+                        <rect key="frame" x="310" y="29" width="51" height="31"/>
+                        <connections>
+                            <action selector="tapSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Q0f-nM-gyh"/>
+                        </connections>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I2-CE-LUE">
+                        <rect key="frame" x="84.666666666666686" y="0.0" width="114" height="60"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4uD-A7-hD7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2Mo-yJ-z2B"/>
+                    <constraint firstItem="rAW-zD-6mv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="BkD-bC-fB8"/>
+                    <constraint firstItem="1I2-CE-LUE" firstAttribute="leading" secondItem="rAW-zD-6mv" secondAttribute="trailing" constant="8" id="MVN-sb-h8x"/>
+                    <constraint firstAttribute="trailing" secondItem="LZJ-KK-e3z" secondAttribute="trailing" constant="15" id="MVa-36-DMC"/>
+                    <constraint firstItem="1I2-CE-LUE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NbM-JK-Sbz"/>
+                    <constraint firstItem="4uD-A7-hD7" firstAttribute="top" secondItem="rAW-zD-6mv" secondAttribute="bottom" id="ljU-PI-2iM"/>
+                    <constraint firstItem="rAW-zD-6mv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="p3X-jL-ngN"/>
+                    <constraint firstItem="LZJ-KK-e3z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="snr-ev-mWn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="timeClock" destination="1I2-CE-LUE" id="XjM-gY-hY5"/>
+                <outlet property="timeSwitch" destination="LZJ-KK-e3z" id="AiC-pe-F2d"/>
+                <outlet property="timeTag" destination="4uD-A7-hD7" id="efV-eI-dJH"/>
+                <outlet property="timeText" destination="rAW-zD-6mv" id="aLR-Fl-ZB4"/>
+            </connections>
+            <point key="canvasLocation" x="180.15267175572518" y="36.267605633802816"/>
+        </tableViewCell>
+    </objects>
+</document>
